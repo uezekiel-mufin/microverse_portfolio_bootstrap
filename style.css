@@ -4,6 +4,8 @@ main {
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  position: relative;
+  overflow-y: scroll;
 }
 
 li a {
@@ -23,6 +25,9 @@ a {
   height: 48px;
   justify-content: space-between;
   padding: 0 24px;
+  position: fixed;
+  background: #ffffff;
+  z-index: 999;
 }
 
 .fa-solid,
@@ -154,6 +159,7 @@ a {
   justify-content: center;
   text-align: center;
   color: #172b4d;
+  margin-bottom: 52px;
 }
 
 #portfolio {
