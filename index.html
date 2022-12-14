@@ -25,9 +25,10 @@
   <body>
     <main class="">
       <section class="headline_navbar">
-        <nav class="navbar">
+        <nav class="navbar toolbar">
+          <a href="#home" class="welcome d-md-none">Welcome</a>
           <ul
-            class="nav_bar me-auto mb-2 mb-lg-0 list-unstyled d-flex container-fluid justify-content-center gap-3 fs-6 flex-row"
+            class="nav_bar me-auto mb-2 mb-lg-0 list-unstyled d-none d-md-flex container-fluid justify-content-center gap-3 fs-6 flex-row"
           >
             <li class="nav-item">
               <a
@@ -57,46 +58,60 @@
               >
             </li>
           </ul>
+          <nav class="menu_icon d-md-none">
+            <i class="fa-solid fa-bars"></i>
+          </nav>
         </nav>
 
         <section
           class="d-flex flex-column justify-content-center gap-2 align-items-center mx-auto headline"
-          style="width: 50%"
         >
-          <h2 class="text-center fw-bold">
-            <a style="color: #172b4d"> Hey there. I’m Ezekiel.</a> <br />
-            <a style="color: #36b37e">I’m a software developer</a>
-          </h2>
-          <p class="text-center" style="color: #172b4d">
-            I can help you build a product , feature or website Look through
-            some of my work and experience! If you like what you see and have a
-            project you need coded, don’t hestiate to contact me.
-          </p>
-          <ul
-            class="nav_bar me-auto mb-2 mb-lg-0 list-unstyled d-flex container-fluid justify-content-center gap-3 flex-row"
-          >
-            <li class="icons icons1">
-              <a href="https://twitter.com/EzzyWealth"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-            </li>
-            <li class="icons icons2">
-              <a href="https://www.linkedin.com/in/ezekiel-udiomuno-b14539150/">
-                <i class="fa-brands fa-linkedin-in"></i
-              ></a>
-            </li>
-            <li class="icons icons3">
-              <a href=""> <i class="fa-sharp fa-solid fa-m"></i></a>
-            </li>
-            <li class="icons icons4">
-              <a href="https://github.com/Ezzywealth"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </li>
-            <li class="icons icons5">
-              <a href=""> <i class="fa-brands fa-angellist"></i></a>
-            </li>
-          </ul>
+          <div class="headline_item">
+            <h2 class="text-center fw-bold">
+              <a style="color: #172b4d" class="header_name">
+                Hey there. I’m Ezekiel.</a
+              >
+              <br />
+              <a style="color: #36b37e" class="header_job"
+                >I’m a software developer</a
+              >
+            </h2>
+            <p
+              class="text-center header_supporting_text"
+              style="color: #172b4d"
+            >
+              I can help you build a product , feature or website Look through
+              some of my work and experience! If you like what you see and have
+              a project you need coded, don’t hestiate to contact me.
+            </p>
+            <ul
+              class="nav_bar me-auto mb-2 mb-lg-0 list-unstyled d-flex container-fluid justify-content-center gap-3 flex-row"
+            >
+              <li class="icons icons1">
+                <a href="https://twitter.com/EzzyWealth"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li class="icons icons2">
+                <a
+                  href="https://www.linkedin.com/in/ezekiel-udiomuno-b14539150/"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li class="icons icons3">
+                <a href=""> <i class="fa-sharp fa-solid fa-m"></i></a>
+              </li>
+              <li class="icons icons4">
+                <a href="https://github.com/Ezzywealth"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li class="icons icons5">
+                <a href=""> <i class="fa-brands fa-angellist"></i></a>
+              </li>
+            </ul>
+          </div>
         </section>
       </section>
       <section id="portfolio">
@@ -259,45 +274,45 @@
           </p>
           <button class="about_button">Get my Resume</button>
         </section>
-        <section
-          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 about_bottom"
-        >
-          <div class="languages col card mb-3">
-            <div class="about_icons">
-              <img src="./images/languages.png" alt="alt" class="" />
+        <section class="about_bottom">
+          <div class="row gap-2 justify-content-center gap-3">
+            <div class="languages card mb-3 col-md-4 col-lg-3">
+              <div class="about_icons">
+                <img src="./images/languages.png" alt="alt" class="" />
+              </div>
+              <h2>languages</h2>
+              <ul class="language_lists">
+                <li class="badge bg-light">Javascript</li>
+                <li class="badge bg-light">Ruby</li>
+                <li class="badge bg-light">HTML</li>
+                <li class="badge bg-light">CSS</li>
+              </ul>
             </div>
-            <h2>languages</h2>
-            <ul class="language_lists">
-              <li class="badge bg-light">Javascript</li>
-              <li class="badge bg-light">Ruby</li>
-              <li class="badge bg-light">HTML</li>
-              <li class="badge bg-light">CSS</li>
-            </ul>
-          </div>
-          <div class="languages col card mb-3">
-            <div class="about_icons">
-              <img src="./images/frameworks.png" alt="alt" class="" />
+            <div class="languages card mb-3 col-md-4 col-lg-3">
+              <div class="about_icons">
+                <img src="./images/frameworks.png" alt="alt" class="" />
+              </div>
+              <h2>Frameworks</h2>
+              <ul class="language_lists">
+                <li class="badge bg-light">Bootstrap</li>
+                <li class="badge bg-light">Rub on rails</li>
+                <li class="badge bg-light">Selenium</li>
+                <li class="badge bg-light">capybara</li>
+              </ul>
             </div>
-            <h2>Frameworks</h2>
-            <ul class="language_lists">
-              <li class="badge bg-light">Bootstrap</li>
-              <li class="badge bg-light">Rub on rails</li>
-              <li class="badge bg-light">Selenium</li>
-              <li class="badge bg-light">capybara</li>
-            </ul>
-          </div>
-          <div class="languages col card mb-3">
-            <div class="about_icons">
-              <img src="./images/skills.png" alt="alt" class="" />
+            <div class="languages card mb-3 col-md-4 col-lg-3">
+              <div class="about_icons">
+                <img src="./images/skills.png" alt="alt" class="" />
+              </div>
+              <h2>Skills</h2>
+              <ul class="language_lists">
+                <li class="badge bg-light">Codekit</li>
+                <li class="badge bg-light">GitHub</li>
+                <li class="badge bg-light">codepen</li>
+                <li class="badge bg-light">GitLab</li>
+                <li class="badge bg-light">Terminal</li>
+              </ul>
             </div>
-            <h2>Skills</h2>
-            <ul class="language_lists">
-              <li class="badge bg-light">Codekit</li>
-              <li class="badge bg-light">GitHub</li>
-              <li class="badge bg-light">codepen</li>
-              <li class="badge bg-light">GitLab</li>
-              <li class="badge bg-light">Terminal</li>
-            </ul>
           </div>
         </section>
       </section>
@@ -367,6 +382,7 @@
           </ul>
         </section>
       </footer>
+      <h3 class="contact_email">geniuswealthb@gmail.com</h3>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
