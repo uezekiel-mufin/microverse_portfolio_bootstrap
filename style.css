@@ -1,18 +1,19 @@
 body,
 main {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
 li a {
-  color: #344563;
+    color: #344563;
 }
 
 a {
-  color: #505f79;
+    color: #505f79;
 }
+
 
 /* .headline_navbar {
   background: url("./images/header-mobile.jpg");
@@ -24,13 +25,114 @@ a {
 } */
 
 .headline_navbar {
-  height: 100vh;
-  background: url("./images/Header-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 85% 0%;
+    background: url("./images/Header-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 85% 0%;
+    margin-bottom: 189px;
 }
 
 .headline {
-  margin-top: 183px;
+    padding: 58px;
+    height: 726px;
+}
+
+.work_title {
+    font-style: normal;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #3a4a42;
+    margin: 0;
+}
+
+.list-inline-item {
+    background: #EBF0EE;
+    border-radius: 4px;
+    width: 100px;
+    height: 32px;
+    display: flex;
+}
+
+.portfolio_header {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #172b4d;
+}
+
+#portfolio {
+    padding: 0 142px;
+    margin-top: 100px;
+}
+
+.porfolio-image {
+    background: #ebf0ee;
+    height: 252px;
+}
+
+#portfolio_list {
+    margin: 0;
+}
+
+#portfolio_list li {
+    background: #ebf0ee;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #3a4a42;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    gap: 10px;
+    width: 122px;
+    height: 48px;
+    bottom: 8px;
+    background: #36b37f;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    border: none;
+    margin: 14px 0;
+}
+
+.button:hover {
+    background: #36b37f;
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+    transition: all 300 ease-in-out;
+}
+
+.button:active {
+    background: #008552;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
 }
